@@ -39,26 +39,16 @@ class MainActivity : AppCompatActivity() {
 //Add data to the model list in the adapter
         catAdapter.setData(
             listOf(
-                CatModel(
-                    Gender.Male,
-                    CatBreed.BalineseJavanese,
-                    "Fred",
-                    "Silent and deadly",
-                    "https://cdn2.thecatapi.com/images/7dj.jpg"
-                ),
-                CatModel(
-                    Gender.Female,
-                    CatBreed.ExoticShorthair,
-                    "Wilma",
-                    "Cuddly assassin",
-                    "https://cdn2.thecatapi.com/images/egv.jpg"
-                ),
-                CatModel(Gender.Unknown,
-                    CatBreed.AmericanCurl,
-                    "Curious George",
-                    "Award winning investigator",
-                    "https://cdn2.thecatapi.com/images/bar.jpg"
-                )
+                CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Wilma", "Cuddly assassin", "https://cdn2.thecatapi.com/images/egv.jpg"),
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg"),
+                CatModel(Gender.Male, CatBreed.Bengal, "Leo", "Playful and energetic", "https://cdn2.thecatapi.com/images/9oo.jpg"),
+                CatModel(Gender.Female, CatBreed.Birman, "Luna", "Elegant and calm", "https://cdn2.thecatapi.com/images/2f9.jpg"),
+                CatModel(Gender.Male, CatBreed.Abyssinian, "Rocky", "Always exploring", "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"),
+                CatModel(Gender.Female, CatBreed.Bombay, "Cleo", "Loves attention", "https://cdn2.thecatapi.com/images/5iYq9NmT1.jpg"),
+                CatModel(Gender.Unknown, CatBreed.CornishRex, "Shadow", "Quick and curious", "https://cdn2.thecatapi.com/images/unX21IBVB.jpg"),
+                CatModel(Gender.Male, CatBreed.EgyptianMau, "Pharaoh", "Royal and proud", "https://cdn2.thecatapi.com/images/WZs2wq2AV.jpg"),
+                CatModel(Gender.Female, CatBreed.Himalayan, "Misty", "Gentle and sweet", "https://cdn2.thecatapi.com/images/3b5.jpg")
             )
         )
         val itemTouchHelper = ItemTouchHelper(catAdapter.swipeToDeleteCallback)
